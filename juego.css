@@ -2,8 +2,7 @@ body {
     background-image: url("juegoppt.png");
     background-position: top center;
     background-size: repeat
-    margin-left: 0px;
-    margin-right: 0px;
+  
 }
 
 .principal {
@@ -136,7 +135,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 3px solid red:
+    border: 3px solid red;
 }
 
 .subtitulo {
