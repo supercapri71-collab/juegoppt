@@ -1,22 +1,26 @@
-body {
+.body {
     background-image: url("juegoppt.png");
-    background-position: top center;
-    background-size: repeat
-  
+    background-size: cover;
+}
+
+.contenedorImagenes {
+    display: flex;
+    justify-content: space-evenly;
+    /*gap: 40px; /* Espacio entre imágenes */
+    margin-top: 30px;
 }
 
 .principal {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-     margin-top: 90px;
-    
+    justify-content: space-around;
+    margin-top: 90px;
 }
 
 .titulo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 20px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -85,15 +89,17 @@ body {
 }
 
 .cajaTexto {
+    display: flex;
+    justify-content: space-evenly;
     border-radius: 4px;
     border-color: white;
     padding: 10px;
-    font-size: 24px;
+    font-size: 16px;
     margin-left: 18px;
     color: black;
 }
 
-.ingresoDatos1 {
+.ingresoDatos {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -133,27 +139,6 @@ body {
 
 .contenidoResultado {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border: 3px solid red;
-}
-
-.subtitulo {
-    display: flex;
-    margin-left: 32px
-}
-
-.tituloSubtotal {
-    display: flex;
-    font-size: 16px;
-    margin-left: 32px;
-    margin-top: 140px;
-}
-
-.tituloSubtotal1 {
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    margin-left: 32px;
-    margin-top: 14px;
 }

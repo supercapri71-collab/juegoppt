@@ -1,27 +1,37 @@
-</html>
 <!DOCTYPE html>
 <html>
 
 <head>
     <script src="utilitarios.js"></script>
-    <script src="serviciosPJuego.js"></script>
+    <script src="serviciosJuego.js"></script>
     <script src="juego.js"></script>
     <link rel="stylesheet" href="juego.css" />
 </head>
 
 <body>
-    <h1 class="titulo"> PIEDRA PAPEL O TIJERA </h1>
-    <div class="principal">
-        <img src="./images/piedra.png" width="200px" height="150px">
+    <div class="titulo">
+        <h1>PIEDRA PAPEL O TIJERA</h1>
+        <h2 id="lblResu"></h2>
     </div>
-    <div class="principal">
-        <img src="./images/papel.png" width="200px" height="150px">
+    <div class="contenedorImagenes">
+        <button type="button" class="boton-imagen" aria-label="Elegir Piedra">
+        <img src="./images/piedra.png" id="miNumero1" width="300px" height="350px" onclick="jugarpu() "></button>
+           <button type="button" class="boton-imagen" aria-label="Elegir Papel">
+        <img src="./images/papel.png" id="miNumero2" width="300px" height="350px" onclick="jugarpa() "></button>
+        <button type="button" class="boton-imagen" aria-label="Elegir Tijera">
+        <img src="./images/tijera.png" id="miNumero3" width="300px" height="350px" onclick="jugarti()"></button>
     </div>
-    <div class="principal">
-        <img src="./images/tijera.png" width="200px" height="150px">
+    <div class="contenidoResultado">
+        <img src="" width="200px" height="150px" id="imgDado">
     </div>
+    <div class="cajaTexto">
+        <h1>PUNTOS JUGADOR</h1>
+        <h2 id="pjuga">0</h2>
+        <h1>PUNTOS COMPUTADORA</h1>
+        <h2 id="pcompu">0</h2>
+    </div>
+    <input class="estiloBoton" type="button" value=" LIMPIAR " class="estiloBoton" onclick="limpiar()" />
 
-    </div>
 </body>
 
 </html>
